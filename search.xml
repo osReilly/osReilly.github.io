@@ -4,6 +4,13 @@
   
     
     <entry>
+      <title><![CDATA[如何开启一个vue.js+webpack的项目]]></title>
+      <url>/2016/10/27/%E5%A6%82%E4%BD%95%E5%BC%80%E5%90%AF%E4%B8%80%E4%B8%AAvue-js-webpack%E7%9A%84%E9%A1%B9%E7%9B%AE/</url>
+      <content type="text"><![CDATA[vue与webpack的结合]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[测试]]></title>
       <url>/2016/10/25/%E6%B5%8B%E8%AF%95/</url>
       <content type="text"><![CDATA[```无聊 最近啥事都感觉无聊，弄了个博客试试]]></content>
