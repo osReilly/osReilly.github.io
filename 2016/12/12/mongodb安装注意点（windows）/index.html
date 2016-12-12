@@ -86,19 +86,16 @@
 
 
 
-<meta name="description" content="最近有同事用到Robomong了，搞了大半天没出来,一直提示 network is unreachable。so我看了下原来是mongodb这货的可视化编辑工具。当然来你要连接mongodb首先你的安装好mongodb数据库,直接找到mongodb官网下载接下来我们怎么解决这个问题：
-第一安装数据库：因为我这里是用的window系统 我下载了一个.mis 文件，这个时候 要注意了 我们不要一直n">
+<meta name="description" content="最近有同事用到Robomong了，搞了大半天没出来,一直提示 network is unreachable。so我看了下原来是mongodb这货的可视化编辑工具。当然来你要连接mongodb首先你的安装好mongodb数据库,直接找到mongodb官网下载接下来我们怎么解决这个问题：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mongodb安装注意点（windows）">
 <meta property="og:url" content="/2016/12/12/mongodb安装注意点（windows）/index.html">
 <meta property="og:site_name" content="四度空间">
-<meta property="og:description" content="最近有同事用到Robomong了，搞了大半天没出来,一直提示 network is unreachable。so我看了下原来是mongodb这货的可视化编辑工具。当然来你要连接mongodb首先你的安装好mongodb数据库,直接找到mongodb官网下载接下来我们怎么解决这个问题：
-第一安装数据库：因为我这里是用的window系统 我下载了一个.mis 文件，这个时候 要注意了 我们不要一直n">
-<meta property="og:updated_time" content="2016-12-12T09:03:41.947Z">
+<meta property="og:description" content="最近有同事用到Robomong了，搞了大半天没出来,一直提示 network is unreachable。so我看了下原来是mongodb这货的可视化编辑工具。当然来你要连接mongodb首先你的安装好mongodb数据库,直接找到mongodb官网下载接下来我们怎么解决这个问题：">
+<meta property="og:updated_time" content="2016-12-12T09:07:59.830Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mongodb安装注意点（windows）">
-<meta name="twitter:description" content="最近有同事用到Robomong了，搞了大半天没出来,一直提示 network is unreachable。so我看了下原来是mongodb这货的可视化编辑工具。当然来你要连接mongodb首先你的安装好mongodb数据库,直接找到mongodb官网下载接下来我们怎么解决这个问题：
-第一安装数据库：因为我这里是用的window系统 我下载了一个.mis 文件，这个时候 要注意了 我们不要一直n">
+<meta name="twitter:description" content="最近有同事用到Robomong了，搞了大半天没出来,一直提示 network is unreachable。so我看了下原来是mongodb这货的可视化编辑工具。当然来你要连接mongodb首先你的安装好mongodb数据库,直接找到mongodb官网下载接下来我们怎么解决这个问题：">
 
 
 
@@ -337,7 +334,7 @@
 
       
         <hr>
-<p>最近有同事用到<a href="https://robomongo.org/" target="_blank" rel="external">Robomong</a>了，搞了大半天没出来,一直提示 <strong>network is unreachable</strong>。<br>so我看了下原来是mongodb这货的可视化编辑工具。当然来你要连接mongodb首先你的安装好mongodb数据库,直接找到<a href="https://www.mongodb.com/download-center?jmp=nav" target="_blank" rel="external">mongodb官网下载</a><br>接下来我们怎么解决这个问题：</p>
+<p>最近有同事用到<a href="https://robomongo.org/" target="_blank" rel="external">Robomong</a>了，搞了大半天没出来,一直提示 <strong>network is unreachable</strong>。<br>so我看了下原来是mongodb这货的可视化编辑工具。当然来你要连接mongodb首先你的安装好mongodb数据库,直接找到<a href="https://www.mongodb.com/download-center?jmp=nav" target="_blank" rel="external">mongodb官网下载</a><br>接下来我们怎么解决这个问题：<br><a id="more"></a></p>
 <h3 id="第一安装数据库："><a href="#第一安装数据库：" class="headerlink" title="第一安装数据库："></a>第一安装数据库：</h3><p>因为我这里是用的window系统 我下载了一个.mis 文件，这个时候 <strong>要注意了</strong> 我们不要一直next安装文件，因为他会默认给安装到（program Files）这个文件，这里是个大坑（到后面你启动服务你就知道了）<br>因为中间的空格在配置window启动服务时候就会出篓子。我们可以选择改变安装路径也就是安装的时候选择（custom 方式)。我选择安装到的是 <strong>D:\mongodb</strong> 不要以为安装完成之后就可以直接连接数据库了，这里还得做几件事。</p>
 <h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
 <li>1.把mongodb添加到环境变量，这个简单直接找到的安装mongodb的路径添加到的系统环境变量中具体操作路径是这样子的（我的电脑/计算机 右击点开属性，继续打开 <strong>高级系统设置</strong> -&gt;<strong>高级</strong>-&gt;<strong>环境变量</strong>-&gt;系统变量中找到 <strong>path</strong> 编辑添加你的 <strong>;mongodb路径/bin;</strong> 追加到path末尾 然后就确定 确定）搞定环境变量配置。这个时候你重新打开cmd 输入mongdb 会有很多东西出来了，不会告诉你mongodb不是内部或外部命令了</li>
