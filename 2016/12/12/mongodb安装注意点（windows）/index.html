@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo,前端，IOS" />
+  <meta name="keywords" content="前端,db,mongodb," />
 
 
 
@@ -86,15 +86,19 @@
 
 
 
-<meta name="description" content="前端，IOS，Android">
-<meta property="og:type" content="website">
-<meta property="og:title" content="四度空间">
-<meta property="og:url" content="/archives/index.html">
+<meta name="description" content="最近有同事用到Robomong了，搞了大半天没出来,一直提示 network is unreachable。so我看了下原来是mongodb这货的可视化编辑工具。当然来你要连接mongodb首先你的安装好mongodb数据库,直接找到mongodb官网下载接下来我们怎么解决这个问题：
+第一安装数据库：因为我这里是用的window系统 我下载了一个.mis 文件，这个时候 要注意了 我们不要一直n">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mongodb安装注意点（windows）">
+<meta property="og:url" content="/2016/12/12/mongodb安装注意点（windows）/index.html">
 <meta property="og:site_name" content="四度空间">
-<meta property="og:description" content="前端，IOS，Android">
+<meta property="og:description" content="最近有同事用到Robomong了，搞了大半天没出来,一直提示 network is unreachable。so我看了下原来是mongodb这货的可视化编辑工具。当然来你要连接mongodb首先你的安装好mongodb数据库,直接找到mongodb官网下载接下来我们怎么解决这个问题：
+第一安装数据库：因为我这里是用的window系统 我下载了一个.mis 文件，这个时候 要注意了 我们不要一直n">
+<meta property="og:updated_time" content="2016-12-12T09:03:41.947Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="四度空间">
-<meta name="twitter:description" content="前端，IOS，Android">
+<meta name="twitter:title" content="mongodb安装注意点（windows）">
+<meta name="twitter:description" content="最近有同事用到Robomong了，搞了大半天没出来,一直提示 network is unreachable。so我看了下原来是mongodb这货的可视化编辑工具。当然来你要连接mongodb首先你的安装好mongodb数据库,直接找到mongodb官网下载接下来我们怎么解决这个问题：
+第一安装数据库：因为我这里是用的window系统 我下载了一个.mis 文件，这个时候 要注意了 我们不要一直n">
 
 
 
@@ -115,10 +119,10 @@
 
 
 
-  <link rel="canonical" href="/archives/"/>
+  <link rel="canonical" href="/2016/12/12/mongodb安装注意点（windows）/"/>
 
 
-  <title> 归档 | 四度空间 </title>
+  <title> mongodb安装注意点（windows） | 四度空间 </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -149,7 +153,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -250,177 +254,196 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 4 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
 
-      
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                mongodb安装注意点（windows）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-12T16:15:37+08:00" content="2016-12-12">
+              2016-12-12
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/12/mongodb安装注意点（windows）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/12/mongodb安装注意点（windows）/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/12/12/mongodb安装注意点（windows）/" class="leancloud_visitors" data-flag-title="mongodb安装注意点（windows）">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o"></i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
+        <hr>
+<p>最近有同事用到<a href="https://robomongo.org/" target="_blank" rel="external">Robomong</a>了，搞了大半天没出来,一直提示 <strong>network is unreachable</strong>。<br>so我看了下原来是mongodb这货的可视化编辑工具。当然来你要连接mongodb首先你的安装好mongodb数据库,直接找到<a href="https://www.mongodb.com/download-center?jmp=nav" target="_blank" rel="external">mongodb官网下载</a><br>接下来我们怎么解决这个问题：</p>
+<h3 id="第一安装数据库："><a href="#第一安装数据库：" class="headerlink" title="第一安装数据库："></a>第一安装数据库：</h3><p>因为我这里是用的window系统 我下载了一个.mis 文件，这个时候 <strong>要注意了</strong> 我们不要一直next安装文件，因为他会默认给安装到（program Files）这个文件，这里是个大坑（到后面你启动服务你就知道了）<br>因为中间的空格在配置window启动服务时候就会出篓子。我们可以选择改变安装路径也就是安装的时候选择（custom 方式)。我选择安装到的是 <strong>D:\mongodb</strong> 不要以为安装完成之后就可以直接连接数据库了，这里还得做几件事。</p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
+<li>1.把mongodb添加到环境变量，这个简单直接找到的安装mongodb的路径添加到的系统环境变量中具体操作路径是这样子的（我的电脑/计算机 右击点开属性，继续打开 <strong>高级系统设置</strong> -&gt;<strong>高级</strong>-&gt;<strong>环境变量</strong>-&gt;系统变量中找到 <strong>path</strong> 编辑添加你的 <strong>;mongodb路径/bin;</strong> 追加到path末尾 然后就确定 确定）搞定环境变量配置。这个时候你重新打开cmd 输入mongdb 会有很多东西出来了，不会告诉你mongodb不是内部或外部命令了</li>
+<li>2.在你的 <strong>mongodb路径</strong> 下添加data文件夹跟logs文件夹，这都是为了数据存储跟数据库日志保存做准备的。（看我的第三步骤data跟logs放在这里就在这新建文件夹了）</li>
+<li>3.添加mongodb服务到window启动服务里面<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mongod --logpath D:\mongodb\logs\mongodb.log  --logappend --dbpath D:\mongodb\data\db\ --directoryperdb --serviceName MongoDB --install</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="完结"><a href="#完结" class="headerlink" title="完结"></a>完结</h4><p> 输入这个命令必须在 <strong>管理员权限的cmd命令行中打开执行</strong> ,否则失败（类似这种Error connecting to the Service Control Manager: 拒绝访问。 (5)）<br>这3不完成以后 你可以查看的window服务了，看看你的mongodb服务有没有添加成功快捷打开方式（win+R）输入 services.msc 在服务里面你就能看到MongoDB服务啦。<br>最后你就可以启动你的Robomongo管理工具 直接可以connection了。<br>好了 bye..</p>
+
+      
+    </div>
+
+    <div>
+      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/weixinpay.png" alt="osReilly WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
       
       
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.png" alt="osReilly Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
 
       
+    </div>
 
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/前端/" rel="tag">#前端</a>
+          
+            <a href="/tags/db/" rel="tag">#db</a>
+          
+            <a href="/tags/mongodb/" rel="tag">#mongodb</a>
+          
+        </div>
+      
 
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/12/12/mongodb安装注意点（windows）/" itemprop="url">
-              
-                <span itemprop="name">mongodb安装注意点（windows）</span>
-              
-            </a>
-        
-      </h1>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/27/如何开启一个vue-js-webpack的项目/" rel="next" title="如何开启一个vue.js+webpack的项目">
+                <i class="fa fa-chevron-left"></i> 如何开启一个vue.js+webpack的项目
+              </a>
+            
+          </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-12-12T16:15:37+08:00"
-              content="2016-12-12" >
-          12-12
-        </time>
-      </div>
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
+    <div class="post-spread">
       
+        <div class="ds-share flat" data-thread-key="2016/12/12/mongodb安装注意点（windows）/"
+     data-title="mongodb安装注意点（windows）"
+     data-content=""
+     data-url="/2016/12/12/mongodb安装注意点（windows）/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
       
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/10/27/如何开启一个vue-js-webpack的项目/" itemprop="url">
-              
-                <span itemprop="name">如何开启一个vue.js+webpack的项目</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-10-27T17:00:40+08:00"
-              content="2016-10-27" >
-          10-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-categories" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/10/25/测试/" itemprop="url">
-              
-                <span itemprop="name">测试</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-10-25T15:02:26+08:00"
-              content="2016-10-25" >
-          10-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/10/23/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-10-23T14:06:38+08:00"
-              content="2016-10-23" >
-          10-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-
+    </div>
+  </div>
 
 
           </div>
@@ -428,6 +451,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/12/12/mongodb安装注意点（windows）/"
+           data-title="mongodb安装注意点（windows）" data-url="/2016/12/12/mongodb安装注意点（windows）/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -447,8 +478,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -561,6 +601,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一安装数据库："><span class="nav-number">1.</span> <span class="nav-text">第一安装数据库：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意事项"><span class="nav-number">2.</span> <span class="nav-text">注意事项</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#完结"><span class="nav-number">2.1.</span> <span class="nav-text">完结</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -680,11 +731,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
 
 
   
